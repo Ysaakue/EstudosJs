@@ -1,0 +1,35 @@
+.container{
+    width: 750px;
+    border: 0.5px solid gray;
+    padding: 10px;
+}
+
+#texto{
+    width: 350px;
+    margin-left: 200px;
+}
+
+#texto, #cores, #tamanho, #reset, .slideshow{
+    border: 0.5px solid #333;
+    padding: 10px;
+    margin-bottom: 15px;
+}
+
+.fingir-link{
+    color: #007bff;
+    text-decoration: none;
+    background-color: transparent;
+    border: none;
+    box-shadow: none;
+    text-shadow: none;
+}
+
+.slideshow .imagens{
+    text-align: center;
+    align-self: center;
+}
+
+#img1, #img2, #img3, #img4{
+    width: 259px;
+    height: 194px;
+}

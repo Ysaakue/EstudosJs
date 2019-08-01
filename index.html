@@ -4,6 +4,7 @@
         <meta charset="UTF-8">
         <link rel="stylesheet" href="css/bootstrap.css">
         <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/index.css">
     </head>
     <body>
         <header>
@@ -16,12 +17,15 @@
                 </li>
             </ul>
         </header>
-        <div>
-            <h1>titulo 1</h1>
-            <h2>Subtitulo</h2>
-            <p>O texto está ecrito nessa parte</p>
-            <h2>Subtitulo 2</h2>
-            <p>Esse é o teste de acentuação</p>
+        <div class="container">
+            <div id="texto">
+                <h1>titulo 1</h1>
+                <h2>Subtitulo</h2>
+                <p>O texto está ecrito nessa parte</p>
+                <h2>Subtitulo 2</h2>
+                <p>Esse é o teste de acentuação</p>
+            </div>
+
             <div id="menu">
                 <div id="cores">
                     <h3>Cores</h3>
@@ -47,7 +51,29 @@
                     <button id="padrao">Default</button>
                 </div>
             </div>
+
+            <div class="slideshow">
+                <h3>Slide Show</h3>
+                <div class="imagens">
+                    <img id="img1" src="css/img/moto1.jpeg" alt="imagem de moto 1">
+                    <img id="img2" src="css/img/moto2.jpeg" alt="imagem de moto 3" style="display: none;">
+                    <img id="img3" src="css/img/moto3.jpeg" alt="imagem de moto 3" style="display: none;">
+                    <img id="img4" src="css/img/moto4.jpeg" alt="imagem de moto 4" style="display: none;">
+                </div>
+
+                <br/>
+    
+                <!--a href="#" id="imagem1" class="desabilitado">1</a>
+                <a href="#" id="imagem2" class="desabilitado">2</a>
+                <a href="#" id="imagem3" class="desabilitado">3</a>
+                <a href="#" id="imagem4" class="desabilitado">4</a-->
+                <button id="imagem1" class="fingir-link">1</button>
+                <button id="imagem2" class="fingir-link">2</button>
+                <button id="imagem3" class="fingir-link">3</button>
+                <button id="imagem4" class="fingir-link">4</button>
+            </div>
         </div>
+
         <footer>
             <script type="text/javascript" src="js/jquery.js"></script>
             <script type="text/javascript" src="js/bootstrap.bundle.js"></script>
