@@ -26,3 +26,5 @@ function tab_modulo2() {
    $('#modulo01').hide();
    $('#modulo02').show();
 }
+
+$('#modulo02').hide();
