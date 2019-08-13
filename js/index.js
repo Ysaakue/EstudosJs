@@ -14,8 +14,5 @@ $('#textarea').keyup(function() {
     };
    
     // Mude o valor + 30 para qualquer um que desejar.
-    $(element).height($(element).prop('scrollHeight') + 30);
+    $(element).height($(element).prop('scrollHeight') + 1);
  };
- 
- newHeight($('#um'));
- newHeight($('#dois'));
