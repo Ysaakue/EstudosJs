@@ -1,6 +1,6 @@
 // require('../index');
 
-function segunda() {
+function segunda01() {
     var target = document.querySelector('#dois');
 
     function pares(x, y) {

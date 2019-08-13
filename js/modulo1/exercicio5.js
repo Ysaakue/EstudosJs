@@ -1,6 +1,6 @@
 // require('../index');
 
-function quinta() {
+function quinta01() {
     var target = document.querySelector('#cinco');
 
     function listar(lista){

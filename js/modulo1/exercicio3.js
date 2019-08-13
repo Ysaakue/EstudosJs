@@ -1,6 +1,6 @@
 // require('../index');
 
-function terceira() {
+function terceira01() {
     var target = document.querySelector('#tres');
 
     function temHabilidade(skills) {

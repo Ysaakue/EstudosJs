@@ -20,3 +20,13 @@ textarea {
 .run,pre, p, textarea {
     margin-left: 30px;
 }
+
+header {
+    float: top;
+    
+}
+
+.resultado {
+    padding-top: 50px;
+    overflow:auto; 
+}

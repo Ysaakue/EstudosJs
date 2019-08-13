@@ -1,6 +1,6 @@
 // require('../index');
 
-function primeira() {
+function primeira01() {
    var target = document.querySelector('#um');
 
    var endereco = {

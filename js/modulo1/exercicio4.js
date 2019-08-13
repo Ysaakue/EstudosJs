@@ -1,6 +1,6 @@
 // require('../index');
 
-function quarta(){
+function quarta01(){
     var target = document.querySelector('#quatro');
 
     function experiencia(anos) {

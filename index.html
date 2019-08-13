@@ -1,17 +1,37 @@
 <html>
     <head>
         <title>Caminho</title>
+        <link rel="stylesheet" href="css/bootstrap.css">
         <link rel="stylesheet" href="css/index.css">
     </head>
     <body>
         <header>
+            <ul class="nav nav-tabs">
+                <li class="nav-item dropdown">
+                    <a onclick="tab_modulo1();" class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Modulo 01</a>
+                    <div class="dropdown-menu">
+                    <a class="dropdown-item" href="#01-primeiro">Exercício 1.1</a>
+                    <a class="dropdown-item" href="#01-segundo">Exercício 1.2</a>
+                    <a class="dropdown-item" href="#01-terceiro">Exercício 1.3</a>
+                    <a class="dropdown-item" href="#01-quarto">Exercício 1.4</a>
+                    <a class="dropdown-item" href="#01-quinto">Exercício 1.5</a>
+                    </div>
+                </li>
 
+                <li class="nav-item dropdown">
+                    <a onclick="tab_modulo2();" class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Modulo 02</a>
+                    <div class="dropdown-menu">
+                    <a class="dropdown-item" href="#02-primeiro">Exercício 1.1</a>
+                    </div>
+                </li>
+            </ul>
         </header>
 
         <div class="resultado">
             <h1>Respostas</h1>
-            <div class="modulo01">
-                <div class="primeiro">
+            <div id="modulo01">
+                <h2>Módulo 1</h2>
+                <div id="01-primeiro">
                     <h3>1º exercicio:</h3>
                     <p>
                         Crie uma função que dado o objeto a seguir:
@@ -33,11 +53,11 @@
                         nº 1293.
                     </p>
     
-                    <button class="run" type="button" onClick="primeira()">Run</button><br><br>
+                    <button class="run" type="button" onClick="primeira01()">Run</button><br><br>
                     <textarea  id="um" cols="70" disabled></textarea>
                 </div>
     
-                <div class="segundo">
+                <div id="01-segundo">
                     <h3>2º exercicio:</h3>
     
                     <p>
@@ -50,11 +70,11 @@
                         pares(32, 321);<br>
                     </p>
     
-                    <button class="run" type="button" onClick="segunda()">Run</button><br><br>
+                    <button class="run" type="button" onClick="segunda01()">Run</button><br><br>
                     <textarea  id="dois" cols="70" disabled></textarea>
                 </div>
     
-                <div class="terceira">
+                <div id="01-terceiro">
                     <h3>3º exercicio:</h3>
     
                     <p>
@@ -69,11 +89,11 @@
                             temHabilidade(skills); // true ou false<br>
                     </p>
     
-                    <button class="run" type="button" onClick="terceira()">Run</button><br><br>
+                    <button class="run" type="button" onClick="terceira01()">Run</button><br><br>
                     <textarea  id="tres" cols="70" disabled></textarea>
                 </div>
     
-                <div class="quarta">
+                <div id="01-quarto">
                     <h3>4º exercicio:</h3>
     
                     <p>
@@ -91,11 +111,11 @@
                             // De 7 a"cima: Jedi Master<br>
                     </p>
     
-                    <button class="run" type="button" onClick="quarta()">Run</button><br><br>
+                    <button class="run" type="button" onClick="quarta01()">Run</button><br><br>
                     <textarea  id="quatro" cols="70" disabled></textarea>
                 </div>
     
-                <div class="quinta">
+                <div id="01-quinto">
                     <h3>5º exercicio:</h3>
     
                     <p>
@@ -119,17 +139,42 @@
                         O Gabriel possui as habilidades: VueJS, Ruby on Rails, Elixir
                     </p>
     
-                    <button class="run" type="button" onClick="quinta()">Run</button><br><br>
+                    <button class="run" type="button" onClick="quinta01()">Run</button><br><br>
                     <textarea  id="cinco" cols="70" disabled></textarea>
                 </div>
             </div>
 
-            <div class="modulo02">
+            <div id="modulo02">
+                <h2>Módulo 2</h2>
+                <div id="02-primeiro">
+                    <h3>1º exercicio:</h3>
+    
+                    <p>
+                    </p>
+                    <p class="codigo">
+                    </p>
+    
+                    <button class="run" type="button" onClick="primeira01()">Run</button><br><br>
+                    <textarea  id="cinco" cols="70" disabled></textarea>
+                </div>
+                <div id="02-">
+                    <h3>º exercicio:</h3>
+    
+                    <p>
+                    </p>
+                    <p class="codigo">
+                    </p>
+    
+                    <button class="run" type="button" onClick="">Run</button><br><br>
+                    <textarea  id="cinco" cols="70" disabled></textarea>
+                </div>
             </div>
         </div>
 
         <script type="text/javascript" src="js/jquery.js"></script>
         <script type="text/javascript" src="js/index.js"></script>
+        <script type="text/javascript" src="js/bootstrap.bundle.min.js"></script>
+        <script type="text/javascript" src="js/bootstrap.bundle.js"></script>
 
         <script type="text/javascript" src="js/modulo1/exercicio1.js"></script>
         <script type="text/javascript" src="js/modulo1/exercicio2.js"></script>
