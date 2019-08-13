@@ -4,118 +4,127 @@
         <link rel="stylesheet" href="css/index.css">
     </head>
     <body>
-        <h1>Respostas</h1>
+        <header>
+
+        </header>
+
         <div class="resultado">
-            <div class="primeiro">
-                <h3>1º exercicio:</h3>
-                <p>
-                    Crie uma função que dado o objeto a seguir:
-                </p>
-                <p class="codigo">
-                    var endereco = {<br>
-                    &ensp;&ensp; rua: "Rua dos pinheiros",<br>
-                    &ensp;&ensp; numero: 1293,<br>
-                    &ensp;&ensp; bairro: "Centro",<br>
-                    &ensp;&ensp; cidade: "São Paulo",<br>
-                    &ensp;&ensp; uf: "SP"<br>
-                    };<br>
-                </p>
-                <p>
-                    Retorne o seguinte conteúdo:
-                </p>
-                <p class="codigo">
-                    O usuário mora em São Paulo / SP, no bairro Centro, na rua "Rua dos Pinheiros" com
-                    nº 1293.
-                </p>
-
-                <button class="run" type="button" onClick="primeira()">Run</button><br><br>
-                <textarea  id="um" cols="70" disabled></textarea>
-            </div>
-
-            <div class="segundo">
-                <h3>2º exercicio:</h3>
-
-                <p>
-                    Crie uma função que dado um intervalo (entre x e y) exiba todos número pares:
-                </p>
-                <p class="codigo">
-                    function pares(x, y) {<br>
-                    &ensp;&ensp; // código aqui<br>
-                    }<br><br>
-                    pares(32, 321);<br>
-                </p>
-
-                <button class="run" type="button" onClick="segunda()">Run</button><br><br>
-                <textarea  id="dois" cols="70" disabled></textarea>
-            </div>
-
-            <div class="terceira">
-                <h3>3º exercicio:</h3>
-
-                <p>
-                    Escreva uma função que verifique se o vetor de habilidades passado possui a habilidade "Javascript"
-                    e retorna um booleano true/false caso exista ou não.
-                </p>
-                <p class="codigo">
-                    function temHabilidade(skills) {<br>
-                    &ensp;&ensp; // código aqui<br>
+            <h1>Respostas</h1>
+            <div class="modulo01">
+                <div class="primeiro">
+                    <h3>1º exercicio:</h3>
+                    <p>
+                        Crie uma função que dado o objeto a seguir:
+                    </p>
+                    <p class="codigo">
+                        var endereco = {<br>
+                        &ensp;&ensp; rua: "Rua dos pinheiros",<br>
+                        &ensp;&ensp; numero: 1293,<br>
+                        &ensp;&ensp; bairro: "Centro",<br>
+                        &ensp;&ensp; cidade: "São Paulo",<br>
+                        &ensp;&ensp; uf: "SP"<br>
+                        };<br>
+                    </p>
+                    <p>
+                        Retorne o seguinte conteúdo:
+                    </p>
+                    <p class="codigo">
+                        O usuário mora em São Paulo / SP, no bairro Centro, na rua "Rua dos Pinheiros" com
+                        nº 1293.
+                    </p>
+    
+                    <button class="run" type="button" onClick="primeira()">Run</button><br><br>
+                    <textarea  id="um" cols="70" disabled></textarea>
+                </div>
+    
+                <div class="segundo">
+                    <h3>2º exercicio:</h3>
+    
+                    <p>
+                        Crie uma função que dado um intervalo (entre x e y) exiba todos número pares:
+                    </p>
+                    <p class="codigo">
+                        function pares(x, y) {<br>
+                        &ensp;&ensp; // código aqui<br>
                         }<br><br>
-                        var skills = ["Javascript", "ReactJS", "React Native"];<br>
-                        temHabilidade(skills); // true ou false<br>
-                </p>
-
-                <button class="run" type="button" onClick="terceira()">Run</button><br><br>
-                <textarea  id="tres" cols="70" disabled></textarea>
+                        pares(32, 321);<br>
+                    </p>
+    
+                    <button class="run" type="button" onClick="segunda()">Run</button><br><br>
+                    <textarea  id="dois" cols="70" disabled></textarea>
+                </div>
+    
+                <div class="terceira">
+                    <h3>3º exercicio:</h3>
+    
+                    <p>
+                        Escreva uma função que verifique se o vetor de habilidades passado possui a habilidade "Javascript"
+                        e retorna um booleano true/false caso exista ou não.
+                    </p>
+                    <p class="codigo">
+                        function temHabilidade(skills) {<br>
+                        &ensp;&ensp; // código aqui<br>
+                            }<br><br>
+                            var skills = ["Javascript", "ReactJS", "React Native"];<br>
+                            temHabilidade(skills); // true ou false<br>
+                    </p>
+    
+                    <button class="run" type="button" onClick="terceira()">Run</button><br><br>
+                    <textarea  id="tres" cols="70" disabled></textarea>
+                </div>
+    
+                <div class="quarta">
+                    <h3>4º exercicio:</h3>
+    
+                    <p>
+                        Escreva uma função que dado um total de anos de estudo retorna o quão experiente o usuário é:
+                    </p>
+                    <p class="codigo">
+                        function "experiencia(anos) {<br>
+                        &ensp; // código aqui<br>
+                        }<br><br>
+                            var anosEstudo = 7;<br>
+                            experiencia(anosEstudo);<br>
+                            // De 0-1 ano: Iniciante<br>
+                            // De 1-3 anos: Intermediário<br>
+                            // De 3-6 anos: Avançado<br>
+                            // De 7 a"cima: Jedi Master<br>
+                    </p>
+    
+                    <button class="run" type="button" onClick="quarta()">Run</button><br><br>
+                    <textarea  id="quatro" cols="70" disabled></textarea>
+                </div>
+    
+                <div class="quinta">
+                    <h3>5º exercicio:</h3>
+    
+                    <p>
+                        Dado o seguinte vetor de objetos:
+                    </p>
+                    <p class="codigo">
+                            var usuarios = [{<br>
+                                &ensp;&ensp;nome: "Diego",<br>
+                                &ensp;&ensp;habilidades: ["Javascript", "ReactJS", "Redux"]<br>
+                            },<br>
+                            {<br>
+                                &ensp;&ensp;nome: "Gabriel",<br>
+                                &ensp;&ensp;habilidades: ["VueJS", "Ruby on Rails", "Elixir"]<br>
+                            }];<br>
+                    </p>
+                    <p>
+                        Escreva uma função que produza o seguinte resultado:
+                    </p>
+                    <p class="codigo">
+                        O Diego possui as habilidades: Javascript, ReactJS, Redux<br>
+                        O Gabriel possui as habilidades: VueJS, Ruby on Rails, Elixir
+                    </p>
+    
+                    <button class="run" type="button" onClick="quinta()">Run</button><br><br>
+                    <textarea  id="cinco" cols="70" disabled></textarea>
+                </div>
             </div>
 
-            <div class="quarta">
-                <h3>4º exercicio:</h3>
-
-                <p>
-                    Escreva uma função que dado um total de anos de estudo retorna o quão experiente o usuário é:
-                </p>
-                <p class="codigo">
-                    function "experiencia(anos) {<br>
-                    &ensp; // código aqui<br>
-                    }<br><br>
-                        var anosEstudo = 7;<br>
-                        experiencia(anosEstudo);<br>
-                        // De 0-1 ano: Iniciante<br>
-                        // De 1-3 anos: Intermediário<br>
-                        // De 3-6 anos: Avançado<br>
-                        // De 7 a"cima: Jedi Master<br>
-                </p>
-
-                <button class="run" type="button" onClick="quarta()">Run</button><br><br>
-                <textarea  id="quatro" cols="70" disabled></textarea>
-            </div>
-
-            <div class="quinta">
-                <h3>5º exercicio:</h3>
-
-                <p>
-                    Dado o seguinte vetor de objetos:
-                </p>
-                <p class="codigo">
-                        var usuarios = [{<br>
-                            &ensp;&ensp;nome: "Diego",<br>
-                            &ensp;&ensp;habilidades: ["Javascript", "ReactJS", "Redux"]<br>
-                        },<br>
-                        {<br>
-                            &ensp;&ensp;nome: "Gabriel",<br>
-                            &ensp;&ensp;habilidades: ["VueJS", "Ruby on Rails", "Elixir"]<br>
-                        }];<br>
-                </p>
-                <p>
-                    Escreva uma função que produza o seguinte resultado:
-                </p>
-                <p class="codigo">
-                    O Diego possui as habilidades: Javascript, ReactJS, Redux<br>
-                    O Gabriel possui as habilidades: VueJS, Ruby on Rails, Elixir
-                </p>
-
-                <button class="run" type="button" onClick="quinta()">Run</button><br><br>
-                <textarea  id="cinco" cols="70" disabled></textarea>
+            <div class="modulo02">
             </div>
         </div>
 
