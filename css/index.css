@@ -17,16 +17,10 @@ textarea {
     text-align: left;
 }
 
-.run,pre, p, textarea {
+.run,pre, p, textarea, #botao2-4 {
     margin-left: 30px;
 }
 
-header {
-    float: top;
-    
-}
-
-.resultado {
-    padding-top: 50px;
-    overflow:auto; 
+a.nav-link.dropdown-toggle {
+    color: #333;
 }

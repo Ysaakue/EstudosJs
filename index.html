@@ -1,6 +1,7 @@
 <html>
     <head>
-        <title>Caminho</title>
+        <title>Java script</title>
+        <meta charset="UTF-8">
         <link rel="stylesheet" href="css/bootstrap.css">
         <link rel="stylesheet" href="css/index.css">
     </head>
@@ -150,23 +151,79 @@
                     <h3>1º exercicio:</h3>
     
                     <p>
-                    </p>
-                    <p class="codigo">
+                        Crie um botão que ao ser clicado cria um novo elemento em tela com a forma de um quadrado
+                        vermelho com 100px de altura e largura. Sempre que o botão for clicado um novo quadrado deve
+                        aparecer na tela.
                     </p>
     
-                    <button class="run" type="button" onClick="primeira01()">Run</button><br><br>
-                    <textarea  id="cinco" cols="70" disabled></textarea>
+                    <button class="run" type="button" onClick="primeira02()">Run</button><br><br>
+                    <div id="blocos" class="row"></div>
                 </div>
-                <div id="02-">
-                    <h3>º exercicio:</h3>
+
+                <div id="02-segundo">
+                    <h3>2º exercicio:</h3>
+
+                    <p>
+                        Utilizando o resultado do primeiro desafio, toda vez que o usuário passar o mouse por cima de
+                        algum quadrado troque sua cor para uma cor aleatória gerada pela função abaixo:
+                    </p>
+                    <p class="codigo">
+                        function getRandomColor() {<br>
+                        &ensp;&ensp;var letters = "0123456789ABCDEF";<br>
+                        &ensp;&ensp; var color = "#";<br>
+                        &ensp;&ensp; for (var i = 0; i < 6; i++) {<br>
+                        &ensp;&ensp;&ensp;&ensp; color += letters[Math.floor(Math.random() * 16)];<br>
+                        &ensp;&ensp; }<br>
+                        &ensp;&ensp; return color;<br>
+                            }<br>
+                            var newColor = getRandomColor(); // #E943F0
+                    </p>
+
+                    <button class="run" type="button" onClick="ajudante()">Run</button><br><br>
+                </div>
+
+                <div id="02-terceiro">
+                    <h3>3º exercicio:</h3>
     
                     <p>
+                        A partir do seguinte vetor:
                     </p>
+
                     <p class="codigo">
+                        var nomes = ["Diego", "Gabriel", "Lucas"];
+                    </p>
+
+                    <p>
+                        Preencha uma lista (&lt;ul&gt;) no HTML com os itens da seguinte forma:<br>
+                        ● Diego<br>
+                        ● Gabriel<br>
+                        ● Lucas<br>
                     </p>
     
-                    <button class="run" type="button" onClick="">Run</button><br><br>
-                    <textarea  id="cinco" cols="70" disabled></textarea>
+                    <button class="run" type="button" onClick="terceira2()">Run</button><br><br>
+                    <ul id=tres2></ul>
+                </div>
+                
+                <div id="02-quarto">
+                    <h3>4º exercicio:</h3>
+    
+                    <p>
+                        Seguindo o resultado do exercício anterior adicione um input em tela e um botão como a seguir:
+                    </p>
+
+                    <p class="codigo">
+                        &lt;input type="text" name="nome"&gt;<br>
+                        &lt;button onClick="adicionar()">Adicionar&lt;/button&gt;
+                    </p>
+
+                    <p>
+                        Ao clicar no botão, a função <i>adicionar()</i> deve ser disparada adicionando um novo item a lista de
+                        nomes baseado no nome preenchido no input e renderizando o novo item em tela juntos aos
+                        demais itens anteriores. Além disso, o conteúdo do input deve ser apagado após o clique.
+                    </p>
+                    
+                    <input type="text" name="nome" id="botao2-4">
+                    <button class="run" type="button" onClick="quarta2()">Adicionar</button><br><br>
                 </div>
             </div>
         </div>
@@ -176,10 +233,17 @@
         <script type="text/javascript" src="js/bootstrap.bundle.min.js"></script>
         <script type="text/javascript" src="js/bootstrap.bundle.js"></script>
 
+        <!-- Primeiro modulo -->
         <script type="text/javascript" src="js/modulo1/exercicio1.js"></script>
         <script type="text/javascript" src="js/modulo1/exercicio2.js"></script>
         <script type="text/javascript" src="js/modulo1/exercicio3.js"></script>
         <script type="text/javascript" src="js/modulo1/exercicio4.js"></script>
         <script type="text/javascript" src="js/modulo1/exercicio5.js"></script>
+
+        <!-- Segundo modulo -->
+        <script type="text/javascript" src="js/modulo2/exercicio1.js"></script>
+        <script type="text/javascript" src="js/modulo2/exercicio2.js"></script>
+        <script type="text/javascript" src="js/modulo2/exercicio3.js"></script>
+        <script type="text/javascript" src="js/modulo2/exercicio4.js"></script>
     </body>
 </html>
