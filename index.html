@@ -9,7 +9,7 @@
         <header>
             <ul class="nav nav-tabs">
                 <li class="nav-item dropdown">
-                    <a onclick="tab_modulo1();" class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Modulo 01</a>
+                    <a onclick="tab_modulo1();" class="nav-link dropdown-toggle active" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false" id="aba_modulo1">Modulo 01</a>
                     <div class="dropdown-menu">
                     <a class="dropdown-item" href="#01-primeiro">Exercício 1.1</a>
                     <a class="dropdown-item" href="#01-segundo">Exercício 1.2</a>
@@ -20,13 +20,17 @@
                 </li>
 
                 <li class="nav-item dropdown">
-                    <a onclick="tab_modulo2();" class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Modulo 02</a>
+                    <a onclick="tab_modulo2();" class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false" id="aba_modulo2">Modulo 02</a>
                     <div class="dropdown-menu">
                         <a class="dropdown-item" href="#02-primeiro">Exercício 2.1</a>
                         <a class="dropdown-item" href="#02-segundo">Exercício 2.2</a>
                         <a class="dropdown-item" href="#02-terceiro">Exercício 2.3</a>
                         <a class="dropdown-item" href="#02-quarto">Exercício 2.4</a>
                     </div>
+                </li>
+
+                <li class="nav-item">
+                    <a onclick="tab_App();" class="nav-link"  href="#" id="aba_App">Aplicação ToDo</a>
                 </li>
             </ul>
         </header>
@@ -148,7 +152,7 @@
                 </div>
             </div>
 
-            <div id="modulo02">
+            <div id="modulo02" style="display: none;">
                 <h2>Módulo 2</h2>
                 <div id="02-primeiro">
                     <h3>1º exercicio:</h3>
@@ -229,24 +233,63 @@
                     <button class="run" type="button" onClick="quarta2()">Adicionar</button><br><br>
                 </div>
             </div>
+
+            <div id="AppToDo" style="display: none;">
+                <h1>Lista de ToDos</h1>
+                <ul>
+
+                </ul>
+
+                <input type="text" placeholder="Digite aqui o ToDo">
+                <button type="button" >Adicionar ToDo</button>
+            </div>
+
+            <div id="modulo" style="display: none;">
+                <div id="03-">
+                    <h3>º exercicio:</h3>
+    
+                    <p>
+                    </p>
+
+                    <p class="codigo">
+
+                    </p>
+    
+                    <button class="run" type="button" onClick="">Run</button><br><br>
+                    <div id="blocos" class="row"></div>
+                </div>
+            </div>
         </div>
 
-        <script type="text/javascript" src="js/jquery.js"></script>
-        <script type="text/javascript" src="js/index.js"></script>
-        <script type="text/javascript" src="js/bootstrap.bundle.min.js"></script>
-        <script type="text/javascript" src="js/bootstrap.bundle.js"></script>
+        <div class="scripts">
+            <div id="scripts-essenciais">
+                <script type="text/javascript" src="js/jquery.js"></script>
+                <script type="text/javascript" src="js/index.js"></script>
+                <script type="text/javascript" src="js/bootstrap.bundle.min.js"></script>
+                <script type="text/javascript" src="js/bootstrap.bundle.js"></script>
+            </div>
 
-        <!-- Primeiro modulo -->
-        <script type="text/javascript" src="js/modulo1/exercicio1.js"></script>
-        <script type="text/javascript" src="js/modulo1/exercicio2.js"></script>
-        <script type="text/javascript" src="js/modulo1/exercicio3.js"></script>
-        <script type="text/javascript" src="js/modulo1/exercicio4.js"></script>
-        <script type="text/javascript" src="js/modulo1/exercicio5.js"></script>
+            <div id="scripts-primeiro-modulo">
+                <!-- Primeiro modulo -->
+                <script type="text/javascript" src="js/modulo1/exercicio1.js"></script>
+                <script type="text/javascript" src="js/modulo1/exercicio2.js"></script>
+                <script type="text/javascript" src="js/modulo1/exercicio3.js"></script>
+                <script type="text/javascript" src="js/modulo1/exercicio4.js"></script>
+                <script type="text/javascript" src="js/modulo1/exercicio5.js"></script>
+            </div>
 
-        <!-- Segundo modulo -->
-        <script type="text/javascript" src="js/modulo2/exercicio1.js"></script>
-        <script type="text/javascript" src="js/modulo2/exercicio2.js"></script>
-        <script type="text/javascript" src="js/modulo2/exercicio3.js"></script>
-        <script type="text/javascript" src="js/modulo2/exercicio4.js"></script>
+            <div id="scripts-segundo-modulo">
+                <!-- Segundo modulo -->
+                <script type="text/javascript" src="js/modulo2/exercicio1.js"></script>
+                <script type="text/javascript" src="js/modulo2/exercicio2.js"></script>
+                <script type="text/javascript" src="js/modulo2/exercicio3.js"></script>
+                <script type="text/javascript" src="js/modulo2/exercicio4.js"></script>
+            </div>
+
+            <div id="scripts-ToDo">
+                <!-- Aplicação ToDo -->
+                <script type="text/javascript" src="js/ToDo/ToDo.js"></script>
+            </div>
+        </div>
     </body>
 </html>

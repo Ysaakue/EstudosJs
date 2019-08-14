@@ -3,6 +3,6 @@ function ajudante() {
     script.setAttribute('type', 'text/javascript');
     script.setAttribute('src', 'js/modulo2/script_exercicio2.js');
     
-    var target = document.querySelector('body');
+    var target = document.querySelector('#scripts-segundo-modulo');
     target.appendChild(script);
 }

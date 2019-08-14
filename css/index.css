@@ -21,6 +21,6 @@ textarea {
     margin-left: 30px;
 }
 
-a.nav-link.dropdown-toggle {
+li.nav-item a {
     color: #333;
 }
