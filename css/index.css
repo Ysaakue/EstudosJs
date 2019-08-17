@@ -17,7 +17,7 @@ textarea {
     text-align: left;
 }
 
-.run,pre, p, textarea, #botao2-4 {
+button, input, pre, p, textarea, #botao2-4, i {
     margin-left: 30px;
 }
 

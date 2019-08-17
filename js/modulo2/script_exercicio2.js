@@ -9,7 +9,6 @@ function getRandomColor() {
 
 function segunda2(ref) {
     var newColor = getRandomColor();
-    console.log(newColor);
 
     var target = document.getElementById(ref.id);
 
